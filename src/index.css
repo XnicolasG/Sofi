@@ -8,13 +8,26 @@
   overflow: hidden;
   animation: marquee 5s linear infinite;
 }
-
+.marqueeSlow{
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marqueeSlow 9s linear infinite;
+}
 @keyframes marquee {
   0%{
     transform: translateX(400%);
   }
   100%{
     transform: translateX(-400%);
+  }
+}
+@keyframes marqueeSlow {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
   }
 }
 

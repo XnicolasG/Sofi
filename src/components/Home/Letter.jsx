@@ -1,18 +1,19 @@
 import React from 'react'
 
-export const Letter = () => {
+export const Letter = ({text}) => {
+   
     return (
         <>
         <hr
-        class="h-[3px] w-1/3 bg-transparent bg-gradient-to-r from-transparent via-sky-500/80 to-transparent"
+        className="h-[3px] w-80 md:w-1/3 bg-transparent bg-gradient-to-r from-transparent via-sky-500/80 to-transparent"
     />
-        <div className='flex justify-center items-center w-1/3 h-14 bg-gradient-to-r from-transparent via-blue-200/40 to-transparent overflow-hidden '>
-            <span className='marquee text-2xl'>
-            ♥️♥️♥️
+        <div className='flex justify-center items-center w-80 md:w-1/3 h-14 bg-gradient-to-r from-transparent via-indigo-200/40 to-transparent overflow-hidden '>
+            <span className={`${text === '♥️ ♥️ ♥️' ? 'marquee' : 'marqueeSlow' } text-2xl`}>
+            {text}
             </span>
         </div>
         <hr
-        class="h-[3px] w-1/3 bg-transparent bg-gradient-to-r from-transparent via-sky-500/80 to-transparent"
+        className="h-[3px] w-80 md:w-1/3 bg-transparent bg-gradient-to-r from-transparent via-sky-500/80 to-transparent"
     />
         </>
     )
