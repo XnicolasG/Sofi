@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'cupon-image':"url('img/breakfast.png')"
+      }
+    },
   },
   plugins: [],
 }
