@@ -20,9 +20,9 @@ export const Home = () => {
     return (
         <main className='relative flex flex-col items-center justify-center h-full'>
             <section className='group relative flex justify-center overflow-hidden h-96 w-72 bg-gradient-to-b from-green-300 to-emerald-600 rounded-t-full'>
-                <img className='w-full drop-shadow-xl group-hover:scale-105 transition-all duration-200' src="img/Main.png" alt="main-sofi" />
+                <img className='w-full drop-shadow-xl group-hover:scale-110 transition-all duration-200' src="img/Main.png" alt="main-sofi" />
             </section>
-            <h2 className='absolute top-28 md:top-36 text-3xl w-full text-sky-950 text-center '>Contando los minutos</h2>
+            <h2 className='absolute top-4 text-3xl w-full text-sky-950 text-center '>Contando los minutos</h2>
             <Letter text={message} />
             <CountDown targetDate={targetDate} />
             <aside className='flex w-2/3 justify-between mt-10'>

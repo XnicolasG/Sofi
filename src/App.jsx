@@ -22,7 +22,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    <main className='bg-gradient-to-br from-indigo-200 to-emerald-100 h-screen w-full'>
+    <main className='bg-gradient-to-br from-indigo-200 to-emerald-100 h-full w-full pb-8' >
      <NavBar />
      <AppRoutes />
     </main>

@@ -6,7 +6,7 @@ export const Cupon = () => {
     const handleFlip = () => setFlipped(!flipped);
 
     return (
-        <section className='flex items-center justify-center h-1/2'>
+        <section className='flex items-center justify-center h-svh'>
             <article className='w-[90%] md:w-2/3 h-[70%] relative overflow-hidden bg-gradient-to-br from-emerald-200 to-sky-300 rounded-lg shadow-lg'>
                 {/* Contenedor de la carta */}
                 <div className={`w-full h-full flex transition-transform duration-500 ${flipped ? 'translate-x-[-100%]' : 'translate-x-0'}`}>
