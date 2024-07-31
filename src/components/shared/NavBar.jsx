@@ -7,7 +7,7 @@ export const NavBar = () => {
                 <div className='rounded-full size-10 overflow-hidden ring-2 ring-sky-400 '>
                     <img src="/img/avatar-sofi.jpg" alt="sofi" />
                 </div>
-                <h1 className='text-indigo-100 text-xl font-bold before:content-["Sofi"] hover:before:content-["Incio"] transition-all duration-150'>
+                <h1 className='text-indigo-100 text-xl font-bold before:content-["Incio"] hover:before:content-["Sofi"] transition-all duration-150'>
                     {/* <span className='text-violet-300'>✦</span> */}
                     
                     {/* <span className='text-violet-400'>✦</span> */}

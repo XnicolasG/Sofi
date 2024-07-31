@@ -6,12 +6,14 @@ export const Cupon = () => {
     const handleFlip = () => setFlipped(!flipped);
 
     return (
-        <section className='flex items-center justify-center h-svh'>
-            <article className='w-[90%] md:w-2/3 h-[70%] relative overflow-hidden bg-gradient-to-br from-emerald-200 to-sky-300 rounded-lg shadow-lg'>
+        <section className='flex mt-8 justify-center min-h-screen'>
+            <article className='w-[90%] md:w-2/3 h-1/2 relative overflow-hidden bg-gradient-to-br from-emerald-200 to-sky-300 rounded-lg shadow-lg'>
                 {/* Contenedor de la carta */}
                 <div className={`w-full h-full flex transition-transform duration-500 ${flipped ? 'translate-x-[-100%]' : 'translate-x-0'}`}>
                     {/* Cara delantera */}
-                    <section className='w-full h-full flex-shrink-0 flex flex-col gap-y-2 '>
+                    <section className='w-full h-full flex-shrink-0 flex overflow-hidden flex-row gap-y-2 '>
+                        <div>
+
                         <h1 className='text-center font-semibold text-xl'>Cupon para desayuno</h1>
                         <article className='flex flex-col items-center gap-y-2 px-2'>
                             <p className='text-start text-sm'>Presenta este cupon el dia de tu cumpleaños para un desayuno en tu casa.</p>
@@ -22,7 +24,8 @@ export const Cupon = () => {
                                 Ver cocinero
                             </button>
                         </article>
-                        <div className="w-full h-48 bg-cupon-image bg-cover bg-center"></div>
+                                    </div>
+                        <div className="w-full h-96 bg-cupon-image object-cover bg-cover bg-center"></div>
                     </section>
 
                     <section className='w-full h-full flex-shrink-0 flex flex-col items-center gap-y-1 bg-gradient-to-br from-green-200 to-teal-300'>
