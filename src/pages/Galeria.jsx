@@ -42,7 +42,7 @@ export const Galeria = () => {
   ]
   return (
       <section className="flex flex-col w-full min-h-screen mt-8 items-center p-4">
-        <h1 className="text-2xl font-bold mb-6">Nuestra Galería</h1>
+        <h1 className="text-4xl md:text-5xl bg-gradient-to-r from-emerald-500 via-teal-400 to-blue-600 bg-clip-text text-transparent  font-bold mb-6">Nuestro rincon de aventuras</h1>
         <main className="grid_gallery w-full max-w-4xl gap-4 rounded-lg shadow-lg ">
       {
         photos.map((photo ) => (
