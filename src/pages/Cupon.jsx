@@ -9,7 +9,7 @@ export const Cupon = () => {
     
 
     return (
-        <section className='flex justify-center items-center min-h-screen'>
+        <section className='flex justify-center mt-8  min-h-screen'>
             <article className="w-full max-w-2xl h-[500px] relative overflow-hidden rounded-lg shadow-xl">
                 <div className={`absolute inset-0 transition-transform duration-500 ease-in-out ${flipped ? '-translate-x-full' : 'translate-x-0'}`}>
                     <CardFace
