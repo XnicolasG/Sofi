@@ -10,7 +10,7 @@ export default {
         '1000': '1000px',
       },
       backgroundImage:{
-        'cupon-image':"url('img/breakfast.png')"
+        'cupon-image':"url('/img/breakfast.png')"
       },
       keyframes:{
         flip:{

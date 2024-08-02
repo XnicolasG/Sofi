@@ -17,6 +17,7 @@ export const Home = () => {
             const timer = setInterval(updateMessage, 1000);
             return () => clearInterval(timer)
     }, [targetDate])
+   
     return (
         <main className='relative flex flex-col items-center justify-center h-full'>
             <section className='group relative flex justify-center overflow-hidden h-96 w-72 bg-gradient-to-b from-green-300 to-emerald-600 rounded-t-full'>

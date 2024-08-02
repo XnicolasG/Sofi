@@ -1,6 +1,12 @@
 import React from 'react'
 
 export const FlipImageCard = () => {
+  const [state, setState] = useState([
+    {msg: 'hola'},
+    {msg2: 'chao'},
+    {cat: 'yuyito'}
+  ])
+
     const imageSrc = {
         frontImg: "/img/me-cupon.jpg",
         altFront: 'front',
