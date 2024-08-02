@@ -2,11 +2,11 @@ import React from 'react'
 
 export const Title = () => (
     <div className=''>
-        <svg className='' width="100%" height="185" fill='#950000'  viewBox="0 -80 500 200">
+        <svg className='' width="100%" height="185" fill='#900000'  viewBox="0 -80 500 200">
             <defs>
                 <path id="curve" d="M 50,150 A 200,200 0 0,1 450,150" />
             </defs>
-            <text className="text-6xl font-playground  ">
+            <text className="text-7xl font-playground  ">
                 <textPath href="#curve" startOffset="50%" textAnchor="middle">
                     Contando los minutos
                 </textPath>

@@ -10,12 +10,12 @@ export const CardFace = ({ title, content, buttonText, onFlip, backgroundImage, 
     
     return(
     <div className={`w-full h-full flex flex-col ${backgroundGradient || backgroundImage} bg-cover bg-center p-6 text-slate-100`}>
-      <h1 className="text-center font-semibold text-4xl mb-4 bg-gradient-to-r from-indigo-600 to-red-700 bg-clip-text text-transparent">{title}</h1>
-      {content && <p className="text-md font-semibold mb-4 bg-black/60 p-1 rounded">{content}</p>}
+      <h1 className="text-center font-semibold text-5xl mb-4 py-2 bg-gradient-to-r from-indigo-600 to-red-700 bg-clip-text text-transparent">{title}</h1>
+      {content && <p className="text-xl font-semibold mb-4 bg-black/60 p-1 rounded">{content}</p>}
       {flipped && <FlipImageCard imageSrc={imageSrc}  />}
       <button
         onClick={onFlip}
-        className="mt-auto w-full max-w-xs mx-auto py-2 text-center font-semibold text-white rounded-xl bg-indigo-500 transition-all shadow-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+        className="mt-auto w-full max-w-xs mx-auto py-2 text-xl text-center font-semibold text-white rounded-xl bg-indigo-500 transition-all shadow-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
       >
         {buttonText}
       </button>
